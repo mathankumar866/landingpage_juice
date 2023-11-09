@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Poppins:ital,wght@0,200;0,600;0,900;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: #ffffff;
+    font-family: 'poppins', sans-serif;
+}
+/* Start Navbar  */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    color: #000000;
+    padding: 0 50px;
+}
+
+.navbar .logo {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.navbar .nav-list {
+    margin-right: auto;
+    position: relative;
+    right: -400px;
+}
+
+.navbar .nav-list ul li {
+    display: inline-block;
+    padding: 0 30px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.navbar .menubar {
+    margin-right: 20px;
+    font-size: 30px;
+}
+
+/* End Navbar  */
+
+.stripe {
+    position: absolute;
+    height: 100px;
+    top: 40%;
+    background: linear-gradient(to right, #fff200, #ffd000);
+}
+
+.orange img{
+    position: absolute;
+    z-index: 1;
+    left: 5%;
+}
+
+.content {
+    position: absolute;
+    top: 160px;
+    left: 500px;
+}
+
+.content h1 {
+    font-size: 70px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #555555;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    height: 170px;
+    width: 900px;
+}
+
+.content h1 .header {
+    position: absolute;
+    bottom: 25px;
+}
+
+.content h2 {
+    position: absolute;
+    font-family: 'Josefin Sans', sans-serif;
+    top: 130px;
+    left: 80px;
+    color: #f4f2ec;
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.content p {
+    width: 400px;
+    font-size: 12px;
+    margin-top: 60px;
+    margin-left: 50px;
+    position: relative;
+    height: 110px;
+    color: #555555;
+    font-weight: 600;
+}
+.products{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.media {
+    position: absolute;
+    bottom: 250px;
+    left: 40px;
+    font-size: 1.5rem;
+}
+
+.media ul {
+    position: absolute;
+    list-style: none;
+}
+
+.media ul li {
+    color: #313131;
+    padding: 10px 0;
+}
+

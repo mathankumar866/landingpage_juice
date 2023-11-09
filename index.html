@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Coke Animated Landing Page Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    </head>
+    <body>
+        <!-- Start of Navbar  -->
+        <nav class="navbar">
+            <div class="logo">YOLO-Fresh</div>
+            <div class="nav-list">
+                <ul>
+                    <li>About</li>
+                    <li>Products</li>
+                    <li>Blogs</li>
+                </ul>
+            </div>
+            <div class="menubar">
+                <ion-icon name="menu"></ion-icon>
+            </div>
+        </nav>
+        <!--End Navbar-->
+
+        <div class="stripe"></div>
+        <div class="orange">
+            <img src="./Images/ORANGEs.png" width="450px" class="coke-can">
+        </div>
+        <!-- Start Content -->
+        <div class="content">
+            <h1> <span class="header">start from</span> </h1>
+            <h2>Fresh Juice</h2>
+            <p> <span class="para"> All right reserved coco cola company based
+                    in georgia. </span> </p>
+        </div>
+
+        <div class="products">
+            <img class="product1" src="./Images/peach.jpg" width="200px" alt>
+            <img class="product2" src="./Images/green apple.jpg" width="200px"
+                alt>
+            <img class="product3" src="./Images/pngtree.jpg" width="200px" alt>
+            <img class="product4" src="./Images/redapple.jpg" width="200px" alt>
+        </div>
+
+        <div class="media">
+            <ul> <li> <ion-icon name="logo-facebook"></ion-icon> </li>
+                <li> <ion-icon name="logo-snapchat"></ion-icon> </li>
+                <li> <ion-icon name="logo-instagram"></ion-icon> </li>
+                <li><ion-icon name="logo-youtube"></ion-icon> </li>
+            </ul>
+        </div>
+
+        <script>
+        TweenMax.from('.navbar', 1, {
+            delay: .5,
+            x: -40,
+            opacity: 0,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.to(".stripe", 2.4, {
+            delay: 1,
+            width: "100%",
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".orange", 1, {
+            delay: 2,
+            opacity: 0,
+            y: -1000,
+            ease: Circ.easeInOut
+        })
+
+        TweenMax.from(".header", 2, {
+            delay: 2.5,
+            x: -600,
+            ease: Circ.easeInOut
+        })
+
+        TweenMax.from(".content h2", 1, {
+            delay: 3,
+            opacity: 0,
+            y: 40,
+            ease: Circ.easeInOut
+        })
+
+        TweenMax.from(".content .para", 1.2, {
+            delay: 3.5,
+            opacity: 0,
+            y: 40,
+            ease: Circ.easeInOut
+        })
+
+        TweenMax.from(".media ul li", 2, {
+            delay: 4,
+            opacity: 0,
+            x: -40,
+            ease: Circ.easeInOut
+        })
+        TweenMax.from(".product1", 1, {
+            delay: 4,
+            x: 900,
+            ease: Expo.easeInOut
+        })
+        TweenMax.from(".product2", 1, {
+            delay: 4.5,
+            x: 900,
+            ease: Expo.easeInOut
+        })
+        TweenMax.from(".product3", 1, {
+            delay: 5,
+            x: 900,
+            ease: Expo.easeInOut
+        })
+        TweenMax.from(".product4", 1, {
+            delay: 5.5,
+            x: 900,
+            ease: Expo.easeInOut
+        })
+    </script>
+
+        <script type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
